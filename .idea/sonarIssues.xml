@@ -3,6 +3,21 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/AAA-helloworld/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB2-eventbinding/src/app/app-02-complete.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB2-eventbinding/src/app/app.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Extra/Angular Architecture.rtf">
           <value>
             <set />
