@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Exercises Angular13/examples/AAA-helloworld/package.json">
           <value>
             <set />
@@ -14,6 +19,46 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB2-eventbinding/src/app/app.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C01-services-http/src/app/shared/model/city.model.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C05-services-http-CRUD/cities.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C05-services-http-CRUD/package.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C05-services-http-CRUD/src/app/app.component.solution.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C05-services-http-CRUD/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C05-services-http-CRUD/src/app/shared/services/city.service.solution.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C05-services-http-CRUD/src/app/shared/services/city.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C06-services-async-pipe/src/app/app.component.ts">
           <value>
             <set />
           </value>

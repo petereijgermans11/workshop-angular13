@@ -15,16 +15,6 @@ xExercises Angular13/examples/G07-angular-testing-course-cypress-cucumber/angula
 {Exercises Angular13/examples/G07-angular-testing-course-cypress-cucumber/angular-testing-course/server/get-courses.route.ts,3/0/301bd15e95676f1e286c33bd6e8434cef480c209
 T
 $Exercises Angular13/.angulardoc.json,9/b/9b85c03f0a51c98e096fcad9a3bdc0f12cb647b8
-N
-Exercises Angular13/.gitignore,1/8/1899e87189f43fdfac42033651c7205b8bb9c46a
-W
-'Exercises Angular13/JavaScript APIs.txt,5/8/5832decc2aefe6a3f9cd9e5b46bbbc54b1ee34c2
-~
-NExercises Angular13/examples/C05-services-http-CRUD/src/app/app.component.html,8/7/875d12a2339ad2df2dda903e124655eaeebc22e2
-”
-dExercises Angular13/examples/C05-services-http-CRUD/src/app/shared/services/city.service.solution.ts,e/0/e0ffe4cca08cf89efe4e0adde6dc93e3cfdef20a
-‹
-[Exercises Angular13/examples/C05-services-http-CRUD/src/app/shared/services/city.service.ts,5/f/5f67effc2456ddb67a18b34bc92a4c172d712ca2
 y
 IExercises Angular13/examples/AAA-helloworld/src/app/app.component.spec.ts,6/e/6e68426748ce0b54f95e41000d2a9523c2667a73
 h
