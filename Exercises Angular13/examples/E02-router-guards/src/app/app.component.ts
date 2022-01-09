@@ -1,7 +1,7 @@
 // app.component.ts
-import { Component } from '@angular/core';
-import { City } from './shared/model/city.model';
-import { CityService } from './shared/services/city.service';
+import {Component} from '@angular/core';
+import {City} from './shared/model/city.model';
+import {CityService} from './shared/services/city.service';
 
 @Component({
   selector: 'city-app',
@@ -18,27 +18,27 @@ export class AppComponent {
 
   }
 
-  public ngOnInit() {
+  public ngOnInit(): void {
     this.getCities();
   }
 
-  public getCity(city: City) {
+  public getCity(city: City): void {
     this.currentCity = city;
   }
 
-  public clearCity() {
+  public clearCity(): void {
     this.currentCity = null;
   }
 
   // increase or decrease rating on Event Emitted
-  public updateRating(rating: number) {
+  public updateRating(rating: number): void {
     this.currentCity.rating += rating;
   }
 
   //***********************
   // implementation
   //***********************
-  public getCities() {
+  public getCities(): void {
     if (!this.cities) {
       this.cityService.getCities().subscribe(
         cityData => {

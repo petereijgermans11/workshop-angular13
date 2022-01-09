@@ -1,17 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-	selector   : 'component3',
-	templateUrl: './app.component3.html'
+  selector: 'component3',
+  templateUrl: './app.component3.html'
 })
 export class AppComponent3 implements OnInit {
-	public myLastName : string;
+  public myLastName: string;
 
-	constructor() {
-	}
+  constructor() {
+  }
 
-	ngOnInit() {
-		this.myLastName = 'Default Value (coming from component): Eijgermans';
-	}
+  public ngOnInit(): void {
+    this.myLastName = 'Default Value (coming from component): Eijgermans';
+  }
 
 }

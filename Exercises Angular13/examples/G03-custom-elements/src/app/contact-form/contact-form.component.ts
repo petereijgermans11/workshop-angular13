@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-contact-form',
@@ -7,7 +7,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.ShadowDom
 })
 export class ContactFormComponent implements OnInit {
-  constructor() { }
-  ngOnInit() {
+  constructor() {
+  }
+
+  public ngOnInit(): void {
   }
 }

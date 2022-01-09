@@ -13,14 +13,14 @@ export class AppComponent implements OnInit {
   constructor(private cityService: CityService) {
   }
 
-  ngOnInit() {
+  public ngOnInit(): void {
     this.getCities();
   }
 
   // ***********************
   // implementation
   // ***********************
-  getCities() {
+  public getCities(): void {
     if (!this.cities) {
       this.cityService.getCities()
         .subscribe(cityData => this.cities = cityData);

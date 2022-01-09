@@ -1,13 +1,14 @@
 // Credits: http://blog.thoughtram.io/angular/2016/01/06/taking-advantage-of-observables-in-angular2.html
-import { Injectable } from '@angular/core';
-import { HttpParams, HttpClient, HttpResponse } from '@angular/common/http';
-import { distinctUntilChanged, map } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpParams} from '@angular/common/http';
+import {distinctUntilChanged, map} from 'rxjs/operators';
 
 @Injectable()
 export class WikipediaService {
-  constructor(private jsonp: HttpClient) {}
+  constructor(private jsonp: HttpClient) {
+  }
 
-  search(keyword: string) {
+  public search(keyword: string) {
     let search = new HttpParams();
     search.set('action', 'opensearch');
     search.set('search', keyword);

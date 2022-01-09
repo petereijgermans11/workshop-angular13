@@ -10,7 +10,7 @@ export class CityService {
   }
 
   // retourneer alle cities
-  getCities() {
+  public getCities(): void {
     return this.http.get<City[]>('assets/cities.json');
   }
 }

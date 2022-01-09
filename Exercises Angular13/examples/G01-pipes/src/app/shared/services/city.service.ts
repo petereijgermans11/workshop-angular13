@@ -11,7 +11,7 @@ export class CityService {
   }
 
   // return alll cities
-  getCities() {
+  public getCities(): void {
     return this.http.get<City[]>('assets/data/cities.json');
   }
 }

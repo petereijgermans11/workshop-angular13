@@ -13,7 +13,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB1-databinding/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB2-eventbinding/src/app/app-02-complete.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB2-eventbinding/src/app/app.component.ts">
           <value>
             <set />
           </value>
@@ -23,7 +33,47 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB3-attributebinding/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB4-twowaybinding/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/BB5-selectielijst-change/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C00-services-static/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C01-services-http/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C01-services-http/src/app/shared/model/city.model.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C02-services-rxjs/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C03-services-cache/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C03-services-cache/src/app/shared/services/city.service.ts">
           <value>
             <set />
           </value>
@@ -63,6 +113,276 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C08-services-live-weather/src/weather/shared/services/weather.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C08-services-live-weather/src/weather/weather.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/C10-post-demo/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D00-components/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D01-components-inputs/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D02-components-outputs/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D02-components-outputs/src/app/city-detail.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D03-pubsub-ordercomponent/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D03-pubsub-ordercomponent/src/app/city-detail.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/D03-pubsub-ordercomponent/src/app/city-orders.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E00-router/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E00-router/src/app/city-detail.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E01-router-parameter/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E01-router-parameter/src/app/shared/services/city.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/canDeactivateComponent.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/city-detail.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/login/login.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/shared/guards/canActivateViaAuthGuard.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/shared/guards/canDeActivateGuard.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/shared/model/cityOrders.model.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E02-router-guards/src/app/shared/services/auth.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F00-forms-template-driven/src/app/MainComponent.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F00-forms-template-driven/src/app/component0/app.component0.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F00-forms-template-driven/src/app/component1/app.component1.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F00-forms-template-driven/src/app/component2/app.component2.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F00-forms-template-driven/src/app/component3/app.component3.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F00-forms-template-driven/src/app/component4/app.component4.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F01-forms-model-driven-2/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F01-forms-model-driven-2/src/app/reactive/reactive-form.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F01-forms-model-driven/src/app/MainComponent.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F01-forms-model-driven/src/app/component1/app.component1.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F01-forms-model-driven/src/app/component2/app.component2.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F02-forms-typeahead/src/app/MainComponent.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F02-forms-typeahead/src/app/component1/app.component1.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/F02-forms-typeahead/src/app/services/wikipedia.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G00-multiple-modules/src/app/customer/customerList/customer.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G00-multiple-modules/src/app/products/productList/products.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G00-multiple-modules/src/app/shared/search/search.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G01-pipes/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G01-pipes/src/app/shared/pipes/defaultImage.pipe.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G01-pipes/src/app/shared/pipes/filter.pipe.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G01-pipes/src/app/shared/services/city.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G02-lazy-loading/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G02-lazy-loading/src/app/customer/customer.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G02-lazy-loading/src/app/products/products.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G02-lazy-loading/src/app/shared/search/search.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G02-lazy-loading/src/app/shared/shared.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G03-custom-elements/src/app/contact-form/contact-form.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G04-highlight-directive/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G04-highlight-directive/src/app/shared/directives/highlight.directive.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G04-highlight-directive/src/app/shared/services/city.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G06-Unit-testing-testbed/angular-test-bed/code/app/auth.service.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G06-Unit-testing-testbed/angular-test-bed/code/app/login.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Extra/Angular Architecture.rtf">
           <value>
             <set />
@@ -79,6 +399,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/xxx.ts">
           <value>
             <set />
           </value>

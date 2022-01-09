@@ -7,7 +7,8 @@ import {Pipe, PipeTransform} from '@angular/core';
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
-  transform(value: any[], args: any[]) {
+
+  public transform(value: any[], args: any[]): any[] {
     // 1. return value unchanged if no arguments (i.e. no filter criteria) are given
     if (!args) {
       return value;

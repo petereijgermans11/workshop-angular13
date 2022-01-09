@@ -1,7 +1,7 @@
 // app.component.ts
-import { Component, OnDestroy } from '@angular/core';
-import { City } from './shared/model/city.model';
-import { CityService } from './shared/services/city.service';
+import {Component} from '@angular/core';
+import {City} from './shared/model/city.model';
+import {CityService} from './shared/services/city.service';
 import {Subscription} from 'rxjs';
 
 @Component({
@@ -14,7 +14,8 @@ export class AppComponent {
   public currentCity: City;
   private sub: Subscription;
 
-  constructor(private cityService: CityService) {}
+  constructor(private cityService: CityService) {
+  }
 
   public ngOnInit() {
     this.sub = this.cityService
@@ -26,19 +27,19 @@ export class AppComponent {
       );
   }
 
-  public showCity(city: City) {
+  public showCity(city: City): void {
     this.currentCity = city;
   }
 
-  public clearCity() {
+  public clearCity(): void {
     this.currentCity = null;
   }
 
-  public updateCityRating(rating) {
+  public updateCityRating(rating): void {
     this.currentCity.rating += rating;
   }
 
-  public ngOnDestroy() {
+  public ngOnDestroy(): void {
     // If subscribed, we must unsubscribe before Angular destroys the component.
     // Failure to do so could create a memory leak.
     this.sub.unsubscribe();

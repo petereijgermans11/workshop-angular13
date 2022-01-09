@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { City } from '../model/city.model';
-import { HttpClient } from '@angular/common/http';
-import { map, catchError } from 'rxjs/operators';
+import {Injectable} from '@angular/core';
+import {Observable, of} from 'rxjs';
+import {City} from '../model/city.model';
+import {HttpClient} from '@angular/common/http';
+import {catchError, map} from 'rxjs/operators';
 
 @Injectable()
 export class CityService {
@@ -10,7 +10,8 @@ export class CityService {
   private cityCache: any[];
   private observable: Observable<any>;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
   // retourneer alle cities, gemapt naar json
   public getCities(): Observable<City[]> {
@@ -41,7 +42,7 @@ export class CityService {
     }
   }
 
-  public clearCache() {
+  public clearCache(): void {
     console.log('Cache cleared - cities removed');
     this.cityCache = null;
   }

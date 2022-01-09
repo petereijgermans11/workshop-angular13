@@ -1,5 +1,5 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {Component, ElementRef, ViewChild} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +14,10 @@ export class AppComponent {
   @ViewChild('password') password: ElementRef;
   response: any;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
-  public doLogin() {
+  public doLogin(): void {
     // Post data naar reqres.in API.
     // EIGENLIJK moet dit via een service, maar nu rechtstreeks in de controller/class gedefinieerd.
     // Zie voor meer info over deze API http://reqres.in.
@@ -32,7 +33,7 @@ export class AppComponent {
     let headers = new HttpHeaders().set('Content-Type', 'application/json');
 
     this.http
-      .post(url, JSON.stringify(data), { headers: headers })
+      .post(url, JSON.stringify(data), {headers: headers})
       .subscribe(
         res => (this.response = res),
         err => console.log('FOUT:', err),

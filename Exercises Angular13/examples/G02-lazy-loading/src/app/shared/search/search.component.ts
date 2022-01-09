@@ -1,20 +1,19 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
-	selector   : 'app-search',
-	templateUrl: './search.component.html',
-	styleUrls  : ['./search.component.css']
+  selector: 'app-search',
+  templateUrl: './search.component.html',
+  styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-	searchValue: string = '';
+  searchValue: string = '';
 
-	doSearch(value): void {
-		if (value) {
-			this.searchValue = `This is an example of a shared component. It doesn\'t actually search for \"${value}\".`;
-		}
-		else {
-			this.searchValue = '';
-		}
-	}
+  public doSearch(value): void {
+    if (value) {
+      this.searchValue = `This is an example of a shared component. It doesn\'t actually search for \"${value}\".`;
+    } else {
+      this.searchValue = '';
+    }
+  }
 }
 

@@ -7,16 +7,16 @@ import {AuthService} from '../services/auth.service';
 @Injectable()
 export class CanActivateViaAuthGuard implements CanActivate {
 
-    constructor(private authService: AuthService, private route: Router) {
-    }
+  constructor(private authService: AuthService, private route: Router) {
+  }
 
-    canActivate() {
-        let isLoggedIn = this.authService.isLoggedIn();
-        console.log('Is logged in? ', isLoggedIn);
-        if (isLoggedIn) {
-            return isLoggedIn;
-        }
-        // user is apparently not logged in. Redirect him to login page
-        this.route.navigate(['login']);
+  public canActivate(): boolean {
+    let isLoggedIn = this.authService.isLoggedIn();
+    console.log('Is logged in? ', isLoggedIn);
+    if (isLoggedIn) {
+      return isLoggedIn;
     }
+    // user is apparently not logged in. Redirect him to login page
+    this.route.navigate(['login']);
+  }
 }

@@ -13,17 +13,17 @@ export class HighlightDirective {
   }
 
   @HostListener('mouseenter')
-  onMouseEnter() {
+  public onMouseEnter(): void {
     this.highlight(this.highlightColor || 'cyan');
   }
 
   @HostListener('mouseleave')
-  onMouseLeave() {
+  public onMouseLeave(): void {
     this.highlight('white');
   }
 
   // private function.
-  private highlight(color: string) {
+  private highlight(color: string): void {
     this.el.style.textShadow = '1px 1px 2px ' + color;
   }
 }

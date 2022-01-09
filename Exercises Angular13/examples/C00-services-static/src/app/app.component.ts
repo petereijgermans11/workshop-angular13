@@ -14,31 +14,33 @@ import {City} from './shared/city.model';
 import {CityService} from "./shared/city.service";
 
 @Component({
-	selector   : 'app-root',
-	templateUrl: 'app.component.html',
-	styles     : [`.cityPhoto{max-width:200px}`]
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styles: [`.cityPhoto {
+    max-width: 200px
+  }`]
 })
 
 // Class
 export class AppComponent implements OnInit {
-	// Properties
-	public currentCity: City;
+  // Properties
+  public currentCity: City;
   public cities: City[];
   public cityPhoto: string;
 
-	// Injection of cityService, which is of type CityService.
-	// Notice the use of the keyword `private` here.
-	constructor(private cityService: CityService) {
+  // Injection of cityService, which is of type CityService.
+  // Notice the use of the keyword `private` here.
+  constructor(private cityService: CityService) {
 
-	}
+  }
 
-  public ngOnInit() {
-		this.cities = this.cityService.getCities();
-	}
+  public ngOnInit(): void {
+    this.cities = this.cityService.getCities();
+  }
 
-  public getCity(city: City) {
-		this.currentCity = this.cityService.getCity(city.id);
-		this.cityPhoto   = `assets/img/${this.currentCity.name}.jpg`;
-		console.log('Fetched city:', this.currentCity);
-	}
+  public getCity(city: City): void {
+    this.currentCity = this.cityService.getCity(city.id);
+    this.cityPhoto = `assets/img/${this.currentCity.name}.jpg`;
+    console.log('Fetched city:', this.currentCity);
+  }
 }

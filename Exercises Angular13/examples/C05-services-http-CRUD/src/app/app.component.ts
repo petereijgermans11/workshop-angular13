@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
   }
 
   // 0. Initialize. Fetch all cities
-  public ngOnInit() {
+  public ngOnInit(): void {
     // we can use the async pipe here
     this.cities = this.cityService.getCities();
   }
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
   }
 
   // 4. Edit a city & update
-  public updateCity() {
+  public updateCity(): void {
     this.cityService.updateCity(this.currentCity)
       .subscribe(res => {
         this.currentCity = res; // should be the same.
@@ -70,7 +70,7 @@ export class AppComponent implements OnInit {
       });
   }
 
-  public cancel() {
+  public cancel(): void {
     this.isEditing = false;
   }
 }

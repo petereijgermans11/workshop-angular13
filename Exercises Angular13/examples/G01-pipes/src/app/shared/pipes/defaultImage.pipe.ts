@@ -7,7 +7,7 @@ import {Pipe, PipeTransform} from '@angular/core';
   name: 'defaultImage'
 })
 export class DefaultImagePipe implements PipeTransform {
-  transform(value: string) {
+  public transform(value: string): string {
     let image = '';
 
     // the value of the pipe is not empty, so an image is available

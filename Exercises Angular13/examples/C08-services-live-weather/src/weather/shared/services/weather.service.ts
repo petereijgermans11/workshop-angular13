@@ -1,15 +1,16 @@
-import { Injectable } from '@angular/core';
-import { WeatherModel, IWeather } from '../model/weather.model';
-import { Observable } from 'rxjs';
-import { map, catchError } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {IWeather, WeatherModel} from '../model/weather.model';
+import {Observable} from 'rxjs';
+import {catchError, map} from 'rxjs/operators';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class WeatherService {
-    // My private key. Please sign up for your own key at www.omdbapi.com
+  // My private key. Please sign up for your own key at www.omdbapi.com
   url: string = 'http://api.openweathermap.org/data/2.5/weather?units=metric&appid=8566d604cd9402b65394b034e52aa2af&';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
   // return Weather
   public searchWeather(cityname: string): Observable<IWeather> {
@@ -24,10 +25,10 @@ export class WeatherService {
     );
   }
 
-  private handleError(error: Response) {
-      console.error('ApiService::handleError', error);
-      console.info('Did you forget to start json server? (npm run json-server)');
-      return Observable.throw(error);
-    }
+  private handleError(error: Response): Observable {
+    console.error('ApiService::handleError', error);
+    console.info('Did you forget to start json server? (npm run json-server)');
+    return Observable.throw(error);
+  }
 
 }

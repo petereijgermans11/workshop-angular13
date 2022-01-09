@@ -16,35 +16,35 @@ import {City} from './shared/city.model'
 // List of cities via *ngFor
 // Conditional heading is shown with *ngIf
 @Component({
-	selector   : 'app-root',
-	templateUrl: 'app.component.html'
+  selector: 'app-root',
+  templateUrl: 'app.component.html'
 })
 
 // Class with properties, array containing cities
 export class AppComponent {
-	// Properties on the component/class
+  // Properties on the component/class
   public name: string = 'Peter Eijgermans';
   public cities: City[] = [
-		new City(1, 'Groningen', 'Groningen'),
-		new City(2, 'Hengelo', 'Overijssel'),
-		new City(3, 'Den Haag', 'Zuid-Holland'),
-		new City(4, 'Enschede', 'Overijssel'),
-	];
-  public counter: number =0;
-  public txtKeyUp : string = '';
+    new City(1, 'Groningen', 'Groningen'),
+    new City(2, 'Hengelo', 'Overijssel'),
+    new City(3, 'Den Haag', 'Zuid-Holland'),
+    new City(4, 'Enschede', 'Overijssel'),
+  ];
+  public counter: number = 0;
+  public txtKeyUp: string = '';
 
-	// 1. Bind to click-event in the page
-	btnClick(){
-		alert('Je hebt '+ ++this.counter +' keer geklikt');
-	}
+  // 1. Bind to click-event in the page
+  public btnClick(): void {
+    alert('Je hebt ' + ++this.counter + ' keer geklikt');
+  }
 
-	// 2. Bind to keyUp-event in the textbox
-	onKeyUp(event:any){
-		this.txtKeyUp = event.target.value;
-	}
+  // 2. Bind to keyUp-event in the textbox
+  public onKeyUp(event: any): void {
+    this.txtKeyUp = event.target.value;
+  }
 
-	 // 3. Bind to keyUp-event via local template variable
-	betterKeyUp(){
-		//... do nothing, for now
-	}
+  // 3. Bind to keyUp-event via local template variable
+  public betterKeyUp(): void {
+    //... do nothing, for now
+  }
 }

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { AuthService } from "./auth.service";
+import {Component} from '@angular/core';
+import {AuthService} from "./auth.service";
 
 @Component({
   selector: 'app-login',
@@ -10,7 +10,7 @@ export class LoginComponent {
   constructor(private auth: AuthService) {
   }
 
-  needsLogin() {
+  public needsLogin(): void {
     return !this.auth.isAuthenticated();
   }
 }

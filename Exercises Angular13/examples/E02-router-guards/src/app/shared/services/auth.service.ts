@@ -1,15 +1,16 @@
 // auth.service.ts
 // voorbeeld 'authentication service'. Voor nu : altijd true retourneren
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class AuthService {
 
-    constructor() { }
+  constructor() {
+  }
 
-    public isLoggedIn(){
-        // return false;
-    	return true; // do real authentication here!
-	}
+  public isLoggedIn(): boolean {
+    // return false;
+    return true; // do real authentication here!
+  }
 
 }

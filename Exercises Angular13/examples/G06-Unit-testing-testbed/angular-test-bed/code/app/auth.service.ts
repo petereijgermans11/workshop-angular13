@@ -1,5 +1,5 @@
 export class AuthService {
-    isAuthenticated(): boolean {
-        return !!localStorage.getItem('token');
-    }
+  public isAuthenticated(): boolean {
+    return !!localStorage.getItem('token');
+  }
 }
