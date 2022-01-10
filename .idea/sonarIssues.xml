@@ -173,7 +173,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E01-router-parameter/src/app/MainComponent.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E01-router-parameter/src/app/app.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/E01-router-parameter/src/app/city-detail.component.ts">
           <value>
             <set />
           </value>
