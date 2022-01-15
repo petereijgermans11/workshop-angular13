@@ -135,20 +135,10 @@ w
 GExercises Angular13/examples/E02-router-guards/src/app/app.component.ts,e/2/e24adc786fb6690c216f27c36eede9bd1077b058
 
 OExercises Angular13/examples/E02-router-guards/src/app/city-detail.component.ts,0/c/0c0b5bacdea6e3f396586821769a1fbcf40a26ed
-‹
-[Exercises Angular13/examples/F00-forms-template-driven/src/app/component2/app.component2.ts,2/a/2a317bf7eab9d3a6e50df6480bb684c762c5562d
-‹
-[Exercises Angular13/examples/F00-forms-template-driven/src/app/component3/app.component3.ts,e/4/e435cfc6f19c782c027902b297e7eac392cba6b6
-‹
-[Exercises Angular13/examples/F00-forms-template-driven/src/app/component4/app.component4.ts,8/1/8160806c358df080336ca3154188b23a5697d994
-‹
-[Exercises Angular13/examples/F00-forms-template-driven/src/app/component0/app.component0.ts,5/2/52e725b809ff090c5395f945555ec5268a357a33
 ˆ
 XExercises Angular13/examples/F01-forms-model-driven/src/app/component2/app.component2.ts,b/4/b41f13a17d067ee025635ec20537652bb050c7f2
 |
 LExercises Angular13/examples/F01-forms-model-driven/src/app/MainComponent.ts,4/b/4b1b85a4151a1a9fa22ee148d24242184dd67091
-ˆ
-XExercises Angular13/examples/F01-forms-model-driven/src/app/component1/app.component1.ts,9/6/969419e2a65d58307f8da1e9fa9c369273dafadf
 ~
 NExercises Angular13/examples/F01-forms-model-driven-2/src/app/app.component.ts,c/2/c23da4b0c15b9163a9d92e43999d9a087a77eee5
 …
