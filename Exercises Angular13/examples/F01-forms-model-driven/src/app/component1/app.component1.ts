@@ -53,7 +53,7 @@ export class AppComponent1 implements OnInit {
     // TODO: do something useful with form
   }
 
-  ////************************** extra
+  //// ************************** extra
   // 1a. Default values?
   // setDefault() {
   // 	setTimeout(()=> {

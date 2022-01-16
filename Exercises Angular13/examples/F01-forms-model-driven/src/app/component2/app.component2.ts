@@ -1,37 +1,37 @@
 import {Component, OnInit} from '@angular/core';
 import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 
-//********************
+// ********************
 // Example 1. Function to match passwords
-//********************
+// ********************
 function passwordMatcher(control: AbstractControl) {
   return control.get('password').value === control.get('confirm').value
-    ? null : {'nomatch': true};
+    ? null : {nomatch: true};
   // we *could*  return just true/false here, but by returning an object
   // we're more flexible in composing our validators.
 }
 
-//********************
+// ********************
 // Example 2: Function to validate email
-//********************
+// ********************
 function validateEmail(control: AbstractControl) {
-  let email = control.get('email').value;
-  let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const email = control.get('email').value;
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email)
     ? null : {'no valid email': true};
 }
 
-//********************
+// ********************
 // (documentation: https://angular.io/docs/ts/latest/api/forms/index/FormGroup-class.html)
 // Example 3: Using multiple custom validators on a form? You have to call
 // *one* validatorFunction that does all validations and returns its results.
 // For example like :
-//********************
+// ********************
 function validateForm(control: AbstractControl) {
   return {
     'match passwords': passwordMatcher(control),
     'valid email': validateEmail(control)
-  }
+  };
 }
 
 // Class Decorator
