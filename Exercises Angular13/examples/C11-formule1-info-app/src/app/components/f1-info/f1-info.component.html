@@ -1,0 +1,18 @@
+<p>f1-info works!</p>
+
+<h3>Select F1 year</h3>
+<div *ngIf="f1Seasons$ | async as results">
+    <select (change)="yearSelected($event)">
+        <option>select year</option>
+        <option *ngFor="let season of results.seasons" [value]="season">{{season}}</option>
+    </select>
+</div>
+
+<div *ngIf="f1SeasonResults$ | async as results">
+    <ol *ngFor="let result of results.MRData.StandingsTable.StandingsLists[0].DriverStandings">{{result.position}} - {{result.points}} - {{result.Driver.code}} - {{result.Driver.permanentNumber}} - {{result.Driver.givenName}} {{result.Driver.familyName}}</ol>
+</div>
+
+<div *ngIf="f1Season$ | async as season">
+    <p>Season {{season.MRData.RaceTable.season}} - races</p>
+    <ol *ngFor="let race of season.MRData.RaceTable.Races" (click)="clickOnRace($event)" [id]="race.round">{{race.round}} - {{race.raceName}} - {{race.Circuit.circuitName}} - {{race.date}} <label *ngIf="race.time" >- {{race.time}}</label></ol>
+</div>
