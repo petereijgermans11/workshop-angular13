@@ -1,0 +1,49 @@
+Architecture
+
+https://www.thetombomb.com/2019/11/13/app-module-vs-core-module-vs-shared-module-vs-feature-modules-in-angular/#:~:text=The%20Core%20Module%20is%20where,that%20it%20is%20provided%20in.
+
+https://medium.com/@joao.aguas/angular-core-and-shared-modules-efe072bc9645
+
+https://medium.com/olegburlaka/modular-architecture-of-spa-on-angular-8-and-gitsubmodule-as-first-step-to-micro-frontend-bc2b06b77d2e
+
+https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81
+
+
+A good guideline to follow is to split our application into at least three different modules — Core, Shared and Feature:
+
+CoreModule
+The Core submodule contains all app-level components and singleton services. It is the 'starting point' of the application!
+	•	Examples of app-level components are the: TabGroupComponent or a RoutingModule.
+	•	Examples of singleton services are: the TabService, Logging Service, AuthService and HttpClientModule.
+Restrictions:
+	•	This Core submodule must be imported once in the root AppModule!
+	•	This Core submodule may not be imported into other modules!
+
+
+SharedModule
+All the “dumb” components and pipes should be implemented here.
+These components don’t import and inject services from core or other features in their constructors.
+
+They should receive all data though attributes in the template of the component using them.
+This all sums up to the fact that SharedModule doesn’t have any dependency to the rest of our application.
+
+The Shared submodule contains directives, pipes, components and other modules that are shared throughout the application. The CommonModule of Angular is also an example of this and provides, among other things, the directives: ngIf and ngFor! Another example of a shared component is the Material Module.
+What would you not put in the Shared submodule? You should not put services in a shared module which may be imported by a lazy loaded module. When a lazy loaded module imports a module which provide a service, angular will create another instance of this service which may result in unexpected behaviors. Also do not put services which are statefull in the Shared submodule.
+HttpClientModule should NOT be defined in the SharedModule, because it is a singleton service!
+
+FeatureModule
+We are going to create multiple feature modules for every independent feature of our application.
+Feature modules should import services from SharedModule and CoreModule.
+If feature module A needs to import service from feature module B, consider moving that service into core! (Example authentication service)
+
+The `Feature` submodule contains all components and modules with business functionality
+
+Rule of thumb is to try to create features which don’t depend on any other features
+ 1  just on services provided by CoreModule
+ 2 and components provided by SharedModule.
+
+LazyLoading
+We should lazy load our feature modules whenever possible.
+
+Aliases for app and environments
+Aliasing our app and environments folders will enable us to implement clean imports which will be consistent throughout our application.

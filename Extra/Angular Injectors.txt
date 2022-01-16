@@ -1,0 +1,58 @@
+
+DEMO:  https://www.youtube.com/watch?v=G8zXugcYd7o
+
+Dependency Injection in Angular
+
+DI is a coding pattern in which a class asks for dependencies from external sources rather than creating them itself.
+
+The injector is responsible for creating service instances AND injecting them into classes like HeroListComponent.
+
+A provider tells an injector how to create the service. 
+A provider can be the service class itself, so that the injector can use new to create an instance
+
+Injectors are inherited, which means that if a given injector can't resolve a dependency, it asks the parent injector to resolve it.
+A component can get services from:
+- its own injector,
+- element injectors (An injector does not actually belong to a component, but rather to the component instance's anchor element in the DOM)
+- from the injectors of its component ancestors,
+- from the injector of its parent NgModule,
+- or from the root injector.
+- Or from the platform injector: that is the parent of all app-root injectors.
+
+
+You can configure injectors with providers at different levels of your app, by setting a metadata value in one of three places:
+	•	In the @Injectable() decorator for the service itself. 
+	•	In the @NgModule() decorator for an NgModule. 
+	•	In the @Component() decorator for a component. 
+The @Injectable() decorator has the providedIn metadata option, where you can specify the provider of the decorated service class with the rootinjector, or with the injector for a specific NgModule.
+The @NgModule() and @Component() decorators have the providers metadata option, where you can configure providers for NgModule-level or component-level injectors.
+
+How to inject a service in a component?
+You can tell Angular to inject a dependency in a component's constructor by specifying a constructor parameter with the dependency type.
+
+Injector hierarchy and service instances
+Services are singletons within the scope of an injector.
+There is only one root injector for an app. Providing UserService at the root or AppModule level means it is registered with the root injector.
+
+Whenever Angular creates a new instance of a component that has providers specified in @Component(), it also creates a new child injector for that instance.
+
+tree-shakable providers
+If you use in your Service the @Injectable() option providedIn: MyLazyloadModule, the provider could be shaken out at compile time, if it is not used anywhere else in the app.
+
+Injector bubbling
+When a component requests a dependency, Angular tries to satisfy that dependency with a provider registered in that component's own injector. If the component's injector lacks the provider, it passes the request up to its parent component's injector.
+
+You can cap the bubbling by adding the @Host() parameter decorator on the dependant-service parameter in a component's constructor. The hunt for providers stops at the injector for the host element of the component.
+
+DI token or InjectionToken
+A dependency provider configures an injector with a DI token, which that injector uses to provide the concrete, runtime version of a dependency value. 
+
+There are a number of different types of tokens we can use when configuring providers:
+- String tokens
+- Type token
+- Injection token
+
+String tokens can cause name clashes so we prefer to use InjectionTokens instead.
+
+See:
+https://codecraft.tv/courses/angular/dependency-injection-and-providers/tokens/
