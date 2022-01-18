@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-import {AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {AbstractControl, FormBuilder, FormGroup, ValidationErrors, Validators} from '@angular/forms';
 
 // ********************
 // Example 1. Function to match passwords
 // ********************
-function passwordMatcher(control: AbstractControl) {
+function passwordMatcher(control: AbstractControl): ValidationErrors | null {
   return control.get('password').value === control.get('confirm').value
     ? null : {nomatch: true};
   // we *could*  return just true/false here, but by returning an object
@@ -59,7 +59,7 @@ export class AppComponent2 implements OnInit {
         firstName: ``,
         lastName: ``
       })
-    }, {validator: passwordMatcher}); // pass in the validator function
+    }, {validators: passwordMatcher}); // pass in the validator function
   }
 
   public onSubmit(): void {
