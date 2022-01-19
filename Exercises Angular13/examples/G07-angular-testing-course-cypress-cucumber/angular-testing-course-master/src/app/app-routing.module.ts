@@ -1,18 +1,18 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HomeComponent} from './courses/home/home.component';
-import {AboutComponent} from './about/about.component';
-import {CourseComponent} from './courses/course/course.component';
-import {CourseResolver} from './courses/services/course.resolver';
+import {HomeComponent} from "./courses/home/home.component";
+import {AboutComponent} from "./about/about.component";
+import {CourseComponent} from "./courses/course/course.component";
+import {CourseResolver} from "./courses/services/course.resolver";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: HomeComponent
 
   },
   {
-    path: 'about',
+    path: "about",
     component: AboutComponent
   },
   {
@@ -23,7 +23,7 @@ const routes: Routes = [
     }
   },
   {
-    path: '**',
+    path: "**",
     redirectTo: '/'
   }
 ];

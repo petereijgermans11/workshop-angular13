@@ -1,13 +1,13 @@
 export interface Course {
-  id: number;
-  seqNo: number;
+  id:number;
+  seqNo:number;
   titles: {
-    description: string;
+    description:string;
     longDescription?: string;
   };
   iconUrl: string;
-  uploadedImageUrl: string;
+  uploadedImageUrl:string;
   courseListIcon: string;
-  category: string;
-  lessonsCount: number;
+  category:string;
+  lessonsCount:number;
 }

@@ -38,10 +38,10 @@ describe('CoursesCardListComponent', () => {
 
     fixture.detectChanges();
 
-    const cards = el.queryAll(By.css('.course-card'));
+    const cards = el.queryAll(By.css(".course-card"));
 
-    expect(cards).toBeTruthy('Could not find cards');
-    expect(cards.length).toBe(12, 'Unexpected number of courses');
+    expect(cards).toBeTruthy("Could not find cards");
+    expect(cards.length).toBe(12, "Unexpected number of courses");
 
   });
 
@@ -53,11 +53,11 @@ describe('CoursesCardListComponent', () => {
 
     const course = component.courses[0];
 
-    const card = el.query(By.css('.course-card:first-child')),
-      title = card.query(By.css('mat-card-title')),
-      image = card.query(By.css('img'));
+    const card = el.query(By.css(".course-card:first-child")),
+      title = card.query(By.css("mat-card-title")),
+      image = card.query(By.css("img"));
 
-    expect(card).toBeTruthy('Could not find course card');
+    expect(card).toBeTruthy("Could not find course card");
 
     expect(title.nativeElement.textContent).toBe(course.titles.description);
 

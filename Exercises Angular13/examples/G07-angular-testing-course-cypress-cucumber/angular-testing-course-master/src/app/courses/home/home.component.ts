@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {Course} from '../model/course';
-import {Observable} from 'rxjs';
-import {CoursesService} from '../services/courses.service';
-import {map} from 'rxjs/operators';
+import {Course} from "../model/course";
+import {Observable} from "rxjs";
+import {CoursesService} from "../services/courses.service";
+import {map} from "rxjs/operators";
 import {sortCoursesBySeqNo} from './sort-course-by-seq';
 
 @Component({
@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
 
     }
 
-    filterByCategory(courses$: Observable<Course[]>, category: string) {
+    filterByCategory(courses$: Observable<Course[]>, category:string) {
       return courses$.pipe(
         map(courses => courses.filter(course => course.category === category).sort(sortCoursesBySeqNo) )
       );

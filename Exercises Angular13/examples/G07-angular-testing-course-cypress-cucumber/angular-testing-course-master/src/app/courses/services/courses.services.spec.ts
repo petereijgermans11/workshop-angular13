@@ -35,18 +35,18 @@ describe('CoursesService', () => {
         expect(courses).toBeTruthy('No courses returned');
 
         expect(courses.length).toBe(12,
-          'incorrect number of courses');
+          "incorrect number of courses");
 
         const course = courses.find(course => course.id == 12);
 
         expect(course.titles.description).toBe(
-          'Angular Testing Course');
+          "Angular Testing Course");
 
       });
 
     const req = httpTestingController.expectOne('/api/courses');
 
-    expect(req.request.method).toEqual('GET');
+    expect(req.request.method).toEqual("GET");
 
     req.flush({payload: Object.values(COURSES)});
 
@@ -64,7 +64,7 @@ describe('CoursesService', () => {
 
     const req = httpTestingController.expectOne('/api/courses/12');
 
-    expect(req.request.method).toEqual('GET');
+    expect(req.request.method).toEqual("GET");
 
     req.flush(COURSES[12]);
 
@@ -72,7 +72,8 @@ describe('CoursesService', () => {
 
   it('should save the course data', () => {
 
-    const changes: Partial<Course> = {titles: {description: 'Testing Course'}};
+    const changes: Partial<Course> =
+      {titles: {description: 'Testing Course'}};
 
     coursesService.saveCourse(12, changes)
       .subscribe(course => {
@@ -83,7 +84,7 @@ describe('CoursesService', () => {
 
     const req = httpTestingController.expectOne('/api/courses/12');
 
-    expect(req.request.method).toEqual('PUT');
+    expect(req.request.method).toEqual("PUT");
 
     expect(req.request.body.titles.description)
       .toEqual(changes.titles.description);
@@ -91,17 +92,18 @@ describe('CoursesService', () => {
     req.flush({
       ...COURSES[12],
       ...changes
-    });
+    })
 
   });
 
   it('should give an error if save course fails', () => {
 
-    const changes: Partial<Course> = {titles: {description: 'Testing Course'}};
+    const changes: Partial<Course> =
+      {titles: {description: 'Testing Course'}};
 
     coursesService.saveCourse(12, changes)
       .subscribe(
-        () => fail('the save course operation should have failed'),
+        () => fail("the save course operation should have failed"),
 
         (error: HttpErrorResponse) => {
           expect(error.status).toBe(500);
@@ -110,7 +112,7 @@ describe('CoursesService', () => {
 
     const req = httpTestingController.expectOne('/api/courses/12');
 
-    expect(req.request.method).toEqual('PUT');
+    expect(req.request.method).toEqual("PUT");
 
     req.flush('Save course failed', {
       status: 500,
@@ -132,12 +134,12 @@ describe('CoursesService', () => {
     const req = httpTestingController.expectOne(
       req => req.url == '/api/lessons');
 
-    expect(req.request.method).toEqual('GET');
-    expect(req.request.params.get('courseId')).toEqual('12');
-    expect(req.request.params.get('filter')).toEqual('');
-    expect(req.request.params.get('sortOrder')).toEqual('asc');
-    expect(req.request.params.get('pageNumber')).toEqual('0');
-    expect(req.request.params.get('pageSize')).toEqual('3');
+    expect(req.request.method).toEqual("GET");
+    expect(req.request.params.get("courseId")).toEqual("12");
+    expect(req.request.params.get("filter")).toEqual("");
+    expect(req.request.params.get("sortOrder")).toEqual("asc");
+    expect(req.request.params.get("pageNumber")).toEqual("0");
+    expect(req.request.params.get("pageSize")).toEqual("3");
 
     req.flush({
       payload: findLessonsForCourse(12).slice(0, 3)

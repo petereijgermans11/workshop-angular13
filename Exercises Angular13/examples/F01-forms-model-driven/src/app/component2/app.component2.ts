@@ -5,6 +5,7 @@ import {AbstractControl, FormBuilder, FormGroup, ValidationErrors, Validators} f
 // Example 1. Function to match passwords
 // ********************
 function passwordMatcher(control: AbstractControl): ValidationErrors | null {
+  console.log('password:::: ', control.get('password').value);
   return control.get('password').value === control.get('confirm').value
     ? null : {nomatch: true};
   // we *could*  return just true/false here, but by returning an object
@@ -15,7 +16,9 @@ function passwordMatcher(control: AbstractControl): ValidationErrors | null {
 // Example 2: Function to validate email
 // ********************
 function validateEmail(control: AbstractControl) {
+  console.log('email:::: ', control.get('email').value);
   const email = control.get('email').value;
+
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email)
     ? null : {'no valid email': true};
@@ -59,7 +62,7 @@ export class AppComponent2 implements OnInit {
         firstName: ``,
         lastName: ``
       })
-    }, {validators: passwordMatcher}); // pass in the validator function
+    }, {validators: validateForm}); // pass in the validator function
   }
 
   public onSubmit(): void {
