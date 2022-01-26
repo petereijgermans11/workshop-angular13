@@ -1,5 +1,5 @@
 // app.component.ts
-import {Component} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {City} from './shared/model/city.model';
 import {CityService} from './shared/services/city.service';
 import {Subscription} from 'rxjs';
@@ -8,7 +8,7 @@ import {Subscription} from 'rxjs';
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy {
   public title: string = 'Cities with order Component and event bus';
   public cities: City[] = [];
   public currentCity: City;
@@ -35,7 +35,7 @@ export class AppComponent {
     this.currentCity = null;
   }
 
-  public updateCityRating(rating): void {
+  public updateCityRating(rating: number): void {
     this.currentCity.rating += rating;
   }
 

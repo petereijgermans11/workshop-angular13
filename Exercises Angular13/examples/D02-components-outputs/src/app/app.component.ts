@@ -1,5 +1,5 @@
 // app.component.ts
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {City} from './shared/city.model'
 import {CityService} from "./shared/city.service";
 import {Subscription} from 'rxjs';
@@ -10,7 +10,7 @@ import {Subscription} from 'rxjs';
 })
 
 // Class
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   // Properties
   public cities: City[];
   public currentCity: City;
