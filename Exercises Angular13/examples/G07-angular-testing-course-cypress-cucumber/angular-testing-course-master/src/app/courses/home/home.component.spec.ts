@@ -42,7 +42,7 @@ describe('HomeComponent', () => {
         fixture = TestBed.createComponent(HomeComponent);
         component = fixture.componentInstance;
         el = fixture.debugElement;
-        coursesService = TestBed.get(CoursesService);
+        coursesService = TestBed.inject(CoursesService);
       });
 
   }));
