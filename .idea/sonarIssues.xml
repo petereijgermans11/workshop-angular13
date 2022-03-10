@@ -8,6 +8,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../angular-testing-course-master/src/app/courses/courses-card-list/courses-card-list.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G02-lazy-loading/src/app/app.routing.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/Exercises Angular13/examples/G07-angular-testing-course-cypress-cucumber/angular-testing-course-master/src/app/courses/home/home.component.spec.ts">
           <value>
             <set />
@@ -24,6 +34,66 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/Extra/Angular Injectors.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-cypress-regressietest/cypress/integration/cucumber/RijwegenTab/RijwegenTab.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/core/infraconfiguration/infraconfiguration.service.spec.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/core/tab-group/tab-group.component.scss">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/core/user-profile-dialog/user-profile-dialog.component.scss">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/feature/rijwegen/visualisatie/imx-viewer-wrapper/imx-viewer-wrapper.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/feature/rijwegen/visualisatie/imx-viewer-wrapper/imx-viewer-wrapper.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/feature/rijwegen/visualisatie/popover/popover.service.spec.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/feature/rijwegen/visualisatie/visualisatie-viewer/visualisatie-viewer.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/feature/rijwegen/visualisatie/visualisatie-viewer/visualisatie-viewer.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/feature/rijwegen/visualisatie/visualisatie.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/app/shared/util/validation-util.spec.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/workspaces/prorail/feniks/feniks/git-repos/feniks-mmi/src/styles.scss">
           <value>
             <set />
           </value>
