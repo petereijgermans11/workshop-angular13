@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
   }
 
   // 1. Get city by Id
-  public getCity(city: City): void {
+  public onCitySelected(city: City): void {
     // Not using the async pipe, because of additional calculations in the .subscribe() block
     this.cityService.getCity(city.id)
       .subscribe(cityFound => {

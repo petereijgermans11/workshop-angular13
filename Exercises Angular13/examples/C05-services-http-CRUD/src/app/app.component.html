@@ -1,78 +1,78 @@
 <h1>CRUD-operations on cities:</h1>
 <h2>using package json-server</h2>
 <div class="row">
-    <div class="col-md-6">
-        <!--First (Left) column: show list of cities-->
-        <ul class="list-group">
-            <li *ngFor="let city of cities | async "
-                class="list-group-item"
-                (click)="getCity(city)">
-                {{ city.id}} - {{ city.name }}
-            </li>
-        </ul>
-        <label>
-            <input type="text" class="form-control-lg" placeholder="new city..." #newCity>
-        </label>
-        <button class="btn btn-primary"
-                (click)="addCity(newCity.value)">
-            Add City
-        </button>
-        <button class="btn btn-primary"
-                (click)="currentCity = null">
-            Clear
-        </button>
-        <div *ngIf="cityAdded">
-            <p>City added: </p>
-            {{ cityAdded | json}}
-        </div>
-    </div><!--/col-->
+  <div class="col-md-6">
+    <!--First (Left) column: show list of cities-->
+    <ul class="list-group">
+      <li (click)="onCitySelected(city)"
+          *ngFor="let city of cities | async "
+          class="list-group-item">
+        {{ city.id}} - {{ city.name }}
+      </li>
+    </ul>
+    <label>
+      <input #newCity class="form-control-lg" placeholder="new city..." type="text">
+    </label>
+    <button (click)="addCity(newCity.value)"
+            class="btn btn-primary">
+      Add City
+    </button>
+    <button (click)="currentCity = null"
+            class="btn btn-primary">
+      Clear
+    </button>
+    <div *ngIf="cityAdded">
+      <p>City added: </p>
+      {{ cityAdded | json}}
+    </div>
+  </div><!--/col-->
 
-    <div class="col-md-6">
-        <!--Second (right) column: edit the current city-->
-        <div *ngIf="currentCity">
-            <h2>Selected city: {{ currentCity.name }}</h2>
-            <img class="cityPhoto"
-                 [src]="cityPhoto" alt="Foto van {{ currentCity.name}}">
-            <button class="btn btn-warning btn-sm"
-                    (click)="isEditing = !isEditing ">
-                <span *ngIf="isEditing">Hide</span>
-                <span *ngIf="!isEditing">Edit</span>
-            </button>
-            <button class="btn btn-danger btn-sm"
-                    (click)="removeCity(currentCity)">
-                Delete
-            </button>
-        </div>
+  <div class="col-md-6">
+    <!--Second (right) column: edit the current city-->
+    <div *ngIf="currentCity">
+      <h2>Selected city: {{ currentCity.name }}</h2>
+      <img [src]="cityPhoto"
+           alt="Foto van {{ currentCity.name}}" class="cityPhoto">
+      <button (click)="isEditing = !isEditing "
+              class="btn btn-warning btn-sm">
+        <span *ngIf="isEditing">Hide</span>
+        <span *ngIf="!isEditing">Edit</span>
+      </button>
+      <button (click)="removeCity(currentCity)"
+              class="btn btn-danger btn-sm">
+        Delete
+      </button>
+    </div>
 
-        <!--Editing a city, Quick and Dirty, using [(ngModel)] -->
-        <div *ngIf="isEditing">
-            <hr>
-            <label>City Name
-                <input type="text" [(ngModel)]="currentCity.name"
-                       placeholder="name" class="form-control-lg">
-            </label>
-            <label>Province
-                <input type="text" [(ngModel)]="currentCity.province"
-                       placeholder="province" class="form-control-lg">
-            </label>
-            <label>Highlights
-                <input type="text" [(ngModel)]="currentCity.highlights"
-                       placeholder="highlights (comma separated)" class="form-control-lg">
-            </label>
-            <p>
-                <button class="btn btn-success"
-                        (click)="updateCity()">Update
-                </button>
-                <button class="btn btn-default"
-                        (click)="cancel()">Cancel
-                </button>
-            </p>
-        </div>
-    </div><!--/col-->
+    <!--Editing a city, Quick and Dirty, using [(ngModel)] -->
+    <div *ngIf="isEditing">
+      <hr>
+      <label>City Name
+        <input [(ngModel)]="currentCity.name" class="form-control-lg"
+               placeholder="name" type="text">
+      </label>
+      <label>Province
+        <input [(ngModel)]="currentCity.province" class="form-control-lg"
+               placeholder="province" type="text">
+      </label>
+      <label>Highlights
+        <input [(ngModel)]="currentCity.highlights" class="form-control-lg"
+               placeholder="highlights (comma separated)" type="text">
+      </label>
+      <p>
+        <button (click)="updateCity()"
+                class="btn btn-success">Update
+        </button>
+        <button (click)="cancel()"
+                class="btn btn-default">Cancel
+        </button>
+      </p>
+    </div>
+  </div><!--/col-->
 </div><!--/row-->
 <hr>
 <p>
-    <a href="https://github.com/typicode/json-server" target="_blank">
-        Info on json-server
-    </a>
+  <a href="https://github.com/typicode/json-server" target="_blank">
+    Info on json-server
+  </a>
 </p>
